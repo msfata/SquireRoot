@@ -1,9 +1,9 @@
 //============================================================================
-// Name        : SquirRoot.cpp
+// Name        : SquareRoot.cpp
 // Author      : MsFata programmingHelp
 // Version     :
 // Copyright   : Your copyright notice
-// Description : SquirRoot in C++, Ansi-style
+// Description : SquareRoot in C++, Ansi-style
 //============================================================================
 
 #include <iostream>
