@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : SquirRoot.cpp
+// Author      : MehriaFata programmingHelp
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <math.h>
+#include <exception>
+
+using namespace std;
+
+int main(){
+    // required variables
+    float square_root = 0, estimation = 1;
+    int cycle=50;
+    
+    try {
+    cout << "enter in a number: ";
+        cin >> square_root;
+        if (square_root<=0){
+            throw 0;
+        }
+    }
+    
+    catch (int invalid_value){
+        cout << "invalid number entered...";
+        return 0;
+    }
+    
+    while(cycle>0){
+        estimation = ( estimation + ( square_root / estimation ) ) / 2;
+        --cycle;
+    }
+    
+    cout << "estimation is: " << estimation << '\n';
+    return 0;
+}
